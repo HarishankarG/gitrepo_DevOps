@@ -1,0 +1,25 @@
+root@harishneo15yaho:~/myAng-app# docker ps
+CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                    NAMES
+2f03a6940956        myangularapp           "docker-entrypoint.s…"   9 minutes ago       Up 9 minutes        0.0.0.0:4200->4200/tcp   practical_curran
+86fefd888043        e671c2a84bb9           "kube-scheduler --bi…"   14 minutes ago      Up 13 minutes                                k8s_kube-scheduler_kube-scheduler-harishneo15yaho_kube-system_f2ba5c7eb2725c82fea73f81137ff93d_4
+dab677e4e34d        4d53b9ec5d96           "kube-controller-man…"   15 minutes ago      Up 15 minutes                                k8s_kube-controller-manager_kube-controller-manager-harishneo15yaho_kube-system_5d7813371792c4f8e256f3fecd7dc0d3_3
+f39950118067        8fafd8af70e9           "/bin/sh -c 'node se…"   30 minutes ago      Up 30 minutes                                k8s_kubernetes-bootcamp_kubernetes-bootcamp-7dc9765bf6-wfhv6_default_860fedd3-d7eb-4320-a0ce-867ecf50f23d_0
+ecba6e7de8eb        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_kubernetes-bootcamp-7dc9765bf6-wfhv6_default_860fedd3-d7eb-4320-a0ce-867ecf50f23d_1
+0d3f1a0ddb6b        8fafd8af70e9           "/bin/sh -c 'node se…"   30 minutes ago      Up 30 minutes                                k8s_kubernetes-bootcamp_kubernetes-bootcamp-7dc9765bf6-k2cbd_default_b2a2f4d3-fe65-4d51-9bcd-e3f1ff0b2cd2_0
+a2ffde9f84e2        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_kubernetes-bootcamp-7dc9765bf6-k2cbd_default_b2a2f4d3-fe65-4d51-9bcd-e3f1ff0b2cd2_1
+93bf98e4ad01        eb516548c180           "/coredns -conf /etc…"   30 minutes ago      Up 30 minutes                                k8s_coredns_coredns-5c98db65d4-dz6jt_kube-system_62974996-11d5-4155-99d6-0a968de73315_0
+eb327f2ecbd0        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_coredns-5c98db65d4-dz6jt_kube-system_62974996-11d5-4155-99d6-0a968de73315_1
+0c42577217f4        eb516548c180           "/coredns -conf /etc…"   30 minutes ago      Up 30 minutes                                k8s_coredns_coredns-5c98db65d4-57vkk_kube-system_47c59ae4-7963-45f5-a6fa-e6cff2763990_0
+983850ec06d3        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_coredns-5c98db65d4-57vkk_kube-system_47c59ae4-7963-45f5-a6fa-e6cff2763990_1
+706e8af48070        573ccb81f66c           "/home/weave/launch.…"   30 minutes ago      Up 30 minutes                                k8s_weave_weave-net-whz8n_kube-system_21f4b84e-8410-45a3-b49f-a50cb68cdd01_1
+0ad14c33d971        9860eea6ad44           "/usr/bin/launch.sh"     30 minutes ago      Up 30 minutes                                k8s_weave-npc_weave-net-whz8n_kube-system_21f4b84e-8410-45a3-b49f-a50cb68cdd01_0
+bb63187072ce        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_kube-scheduler-harishneo15yaho_kube-system_f2ba5c7eb2725c82fea73f81137ff93d_0
+ba7b49058524        2c4adeb21b4f           "etcd --advertise-cl…"   30 minutes ago      Up 30 minutes                                k8s_etcd_etcd-harishneo15yaho_kube-system_9615b1463ffa2ed6dfbaa7fb580551f9_0
+baab6a6c4ced        0eaa5e1d871a           "kube-apiserver --ad…"   30 minutes ago      Up 30 minutes                                k8s_kube-apiserver_kube-apiserver-harishneo15yaho_kube-system_5c6bec9a299e73583eae03d027fe062d_0
+4fdbf43bd057        7cd3972af624           "/usr/local/bin/kube…"   30 minutes ago      Up 30 minutes                                k8s_kube-proxy_kube-proxy-lr6rw_kube-system_08e8b401-ddf4-4f32-9da6-e8e3d7e5774b_0
+46930f85d850        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_kube-controller-manager-harishneo15yaho_kube-system_5d7813371792c4f8e256f3fecd7dc0d3_0
+c1d50fee8867        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_kube-apiserver-harishneo15yaho_kube-system_5c6bec9a299e73583eae03d027fe062d_0
+c0b9a920adbb        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_etcd-harishneo15yaho_kube-system_9615b1463ffa2ed6dfbaa7fb580551f9_0
+2181117aaa3f        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_weave-net-whz8n_kube-system_21f4b84e-8410-45a3-b49f-a50cb68cdd01_0
+ffcd5eb676ca        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_kube-proxy-lr6rw_kube-system_08e8b401-ddf4-4f32-9da6-e8e3d7e5774b_0
+root@harishneo15yaho:~/myAng-app# 
