@@ -754,5 +754,20 @@ added 956 packages from 687 contributors in 73.863s
 Removing intermediate container ef0f005b555d
  ---> c93aa95cff64
 Step 8/9 : COPY . /usr/src/app
+ ---> 26d5489fb59c
+Step 9/9 : CMD ng serve --host 0.0.0.0
+ ---> Running in 4c880f8e9577
+Removing intermediate container 4c880f8e9577
+ ---> e3038305b6ad
+Successfully built e3038305b6ad
+Successfully tagged myangularapp:latest
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# docker run -d -p 4200:4200 myangularapp
+2f03a6940956a56722617569b988610efd6d3056a9ff0b09b5d49ce83196877c
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# 
 
 
