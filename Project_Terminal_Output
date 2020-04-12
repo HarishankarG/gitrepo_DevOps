@@ -769,5 +769,40 @@ root@harishneo15yaho:~/myAng-app# docker run -d -p 4200:4200 myangularapp
 root@harishneo15yaho:~/myAng-app# 
 root@harishneo15yaho:~/myAng-app# 
 root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# docker images
+REPOSITORY                           TAG                 IMAGE ID            CREATED              SIZE
+myangularapp                         latest              e3038305b6ad        About a minute ago   1.52GB
+node                                 12                  0c601cba9f11        2 days ago           916MB
+weaveworks/weave-npc                 2.6.2               9860eea6ad44        3 weeks ago          36.7MB
+weaveworks/weave-kube                2.6.2               573ccb81f66c        3 weeks ago          123MB
+k8s.gcr.io/kube-apiserver            v1.15.11            0eaa5e1d871a        4 weeks ago          207MB
+k8s.gcr.io/kube-proxy                v1.15.11            7cd3972af624        4 weeks ago          82.5MB
+k8s.gcr.io/kube-controller-manager   v1.15.11            4d53b9ec5d96        4 weeks ago          159MB
+k8s.gcr.io/kube-scheduler            v1.15.11            e671c2a84bb9        4 weeks ago          81.2MB
+k8s.gcr.io/coredns                   1.3.1               eb516548c180        15 months ago        40.3MB
+k8s.gcr.io/etcd                      3.3.10              2c4adeb21b4f        16 months ago        258MB
+k8s.gcr.io/pause                     3.1                 da86e6ba6ca1        2 years ago          742kB
+jocatalin/kubernetes-bootcamp        v1                  8fafd8af70e9        3 years ago          211MB
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# netstat -a   | grep 4200
+tcp        0      0 *:42006                 *:*                     LISTEN     
+tcp        0      0 harishneo15yaho.i:42006 ec2-34-235-2-238.:57278 ESTABLISHED
+tcp6       0      0 [::]:4200               [::]:*                  LISTEN     
+tcp6       0      0 [::]:42000              [::]:*                  LISTEN     
+tcp6       0      0 [::]:42001              [::]:*                  LISTEN     
+tcp6       0      0 [::]:42003              [::]:*                  LISTEN     
+tcp6       0      0 localhost:42004         [::]:*                  LISTEN     
+tcp6       0      0 [::]:42006              [::]:*                  LISTEN     
+tcp6       0      0 ip6-localhost:4200      ip6-localhost:54952     TIME_WAIT  
+tcp6       0      0 ip6-localhost:4200      ip6-localhost:54964     TIME_WAIT  
+tcp6       0      0 ip6-localhost:4200      ip6-localhost:54948     TIME_WAIT  
+tcp6       0      0 ip6-localhost:4200      ip6-localhost:54972     TIME_WAIT  
+tcp6       0      0 ip6-localhost:4200      ip6-localhost:54944     TIME_WAIT  
+tcp6       0      0 ip6-localhost:4200      ip6-localhost:54968     TIME_WAIT  
+tcp6       0   9100 harishneo15yaho.i:42001 abts-kk-dynamic-5:49816 ESTABLISHED
+root@harishneo15yaho:~/myAng-app# 
+root@harishneo15yaho:~/myAng-app# 
 
 
