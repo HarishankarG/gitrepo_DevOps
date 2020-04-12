@@ -23,3 +23,8 @@ c0b9a920adbb        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes a
 2181117aaa3f        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_weave-net-whz8n_kube-system_21f4b84e-8410-45a3-b49f-a50cb68cdd01_0
 ffcd5eb676ca        k8s.gcr.io/pause:3.1   "/pause"                 30 minutes ago      Up 30 minutes                                k8s_POD_kube-proxy-lr6rw_kube-system_08e8b401-ddf4-4f32-9da6-e8e3d7e5774b_0
 root@harishneo15yaho:~/myAng-app# 
+
+root@harishneo15yaho:~/myAng-app# docker ps | grep myang
+2f03a6940956        myangularapp           "docker-entrypoint.s…"   12 minutes ago      Up 12 minutes       0.0.0.0:4200->4200/tcp   practical_curran
+root@harishneo15yaho:~/myAng-app# 
+
