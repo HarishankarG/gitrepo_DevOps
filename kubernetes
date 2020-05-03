@@ -22,7 +22,6 @@ spec:
 
 ==
 
-curl -L https://github.com/etcd-io/etcd/releases/download/v3.3.11/etcd-v3.3.11-linux-amd64.tar.gz -o etcd-v3.3.11-linux-amd64.tar.gz
-
+curl -L https://github.com/etcd-io/etcd/releases/download/v3.3.11/etcd-v3.3.11-linux-amd64.tar.gzv3.3.11-linux-amd64.tar.gz -o  etcd-v3.3.11-linux-amd64.tar.gz
 ===
 
