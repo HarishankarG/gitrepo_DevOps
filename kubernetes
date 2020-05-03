@@ -17,3 +17,12 @@ spec:
          value: "supercentos"
       ports:
         - containerPort: 3306
+
+
+
+==
+
+curl -L https://github.com/etcd-io/etcd/releases/download/v3.3.11/etcd-v3.3.11-linux-amd64.tar.gz -o etcd-v3.3.11-linux-amd64.tar.gz
+
+===
+
