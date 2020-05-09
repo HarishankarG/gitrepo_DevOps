@@ -32,3 +32,8 @@ curl -L https://github.com/etcd-io/etcd/releases/download/v3.3.11/etcd-v3.3.11-l
 kubectl exec -it -n kube-system etcd-kmaster -- sh -c "ETCDCTL_API=3 etcdctl --endpoints $advertise_url --cacert /etc/kubernetes/pki/etcd/ca.crt --key /etc/kubernetes/pki/etcd/server.key --cert /etc/kubernetes/pki/etcd/server.crt get \"\" --prefix=true -w json" > etcd1.json
 
 =====
+
+====
+for k in $(cat etcd.json | jq '.kvs[].key' | cut -d '"' -f2); do echo $k | base64 --decode; echo; done
+
+====
