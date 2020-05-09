@@ -37,3 +37,8 @@ kubectl exec -it -n kube-system etcd-kmaster -- sh -c "ETCDCTL_API=3 etcdctl --e
 for k in $(cat etcd.json | jq '.kvs[].key' | cut -d '"' -f2); do echo $k | base64 --decode; echo; done
 
 ====
+
+=====
+ kubectl exec -it -n kube-system etcd-kmaster -- sh -c "ETCDCTL_API=3 etcdctl --endpoints $advertise_url --cacert /etc/kubernetes/pki/etcd/ca.crt --key /etc/kubernetes/pki/etcd/server.key --cert /etc/kubernetes/pki/etcd/server.crt get \"$key\" --prefix=true -w json" | jq
+ 
+ ====
